@@ -1,6 +1,6 @@
 syntax = "proto2";
 
-option go_package = "ssl_vision";
+option go_package = ".";
 
 import "ssl_detection.proto";
 import "ssl_geometry.proto";

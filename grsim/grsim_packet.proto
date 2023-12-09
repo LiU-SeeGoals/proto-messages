@@ -1,6 +1,6 @@
 syntax = "proto2";
 
-option go_package = "grsim";
+option go_package = ".";
 
 import "grsim_commands.proto";
 import "grsim_replacement.proto";
