@@ -20,3 +20,10 @@ To build the C code, run the following script from the root of this directory:
 ```bash
 ./build_c.sh
 ```
+
+### For Python
+To build the Python code, run the following script from the root of this directory:
+
+```bash
+./build_python.sh
+```
