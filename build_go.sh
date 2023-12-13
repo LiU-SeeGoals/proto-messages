@@ -10,7 +10,7 @@ generate_go_code() {
     local dir_path="${SCRIPT_DIR}/${dir_name}"
     for PROTO_FILE in "${dir_path}"/*.proto; do
         # Generate Go code in the directory of the script
-        protoc --proto_path="${dir_path}" --go_out="${SCRIPT_DIR}" "${PROTO_FILE}"
+        protoc --proto_path="${dir_path}" --go_out="${SCRIPT_DIR}/proto" "${PROTO_FILE}"
     done
 }
 
