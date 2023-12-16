@@ -21,6 +21,8 @@ To build the C code, run the following script from the root of this directory:
 ./build_c.sh
 ```
 
+The C code uses the [nanopb](https://github.com/nanopb/nanopb) implementation since it's running on embedded systems.
+
 ### For Python
 To build the Python code, run the following script from the root of this directory:
 
