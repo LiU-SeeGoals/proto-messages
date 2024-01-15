@@ -15,7 +15,7 @@ mkdir -p "${ACTION_DIR}"
 generate_c_code() {
 	local dir_path="$1"
 	for PROTO_FILE in "${dir_path}"/*.proto; do
-		protoc-c --c_out="${dir_path}" --proto_path="${dir_path}" "${PROTO_FILE}"
+		protoc --plugin=protoc-gen-nanopb=nanopb-gen/protoc-gen-nanopb --nanopb_out="${dir_path}" --proto_path="${dir_path}" "${PROTO_FILE}"
 	done
 }
 
