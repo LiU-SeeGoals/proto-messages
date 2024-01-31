@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+message Vector2 {
+    float x = 1;
+    float y = 2;
+}
+
+message Robot {
+    RobotId robot_id = 1;
+
+    Vector2 pos = 2;
+    float orientation = 3;
+    Vector2 vel = 4;
+}
+
+message ParsedFrame {
+
+    repeated Robot robots = 1;
+    Vector2 ball = 2;
+}
