@@ -6,7 +6,7 @@ message Vector2 {
 }
 
 message Robot {
-    RobotId robot_id = 1;
+    uint32 robot_id = 1;
 
     Vector2 pos = 2;
     float orientation = 3;
