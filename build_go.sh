@@ -26,6 +26,5 @@ generate_go_code() {
 # Generate Go code for proto files in the action, grsim, and ssl_vision directories
 generate_go_code "robot_action"
 generate_go_code "grsim"
-generate_go_code "ssl_vision"
 
 echo "Proto files built in ${SCRIPT_DIR}/go"

@@ -1,20 +1,21 @@
 syntax = "proto3";
 
+option go_package = "/robot_action";
 message Vector2 {
-    float x = 1;
-    float y = 2;
+  float x = 1;
+  float y = 2;
 }
 
 message Robot {
-    uint32 robot_id = 1;
+  uint32 robot_id = 1;
 
-    Vector2 pos = 2;
-    float orientation = 3;
-    Vector2 vel = 4;
+  Vector2 pos = 2;
+  float orientation = 3;
+  Vector2 vel = 4;
 }
 
 message ParsedFrame {
 
-    repeated Robot robots = 1;
-    Vector2 ball = 2;
+  repeated Robot robots = 1;
+  Vector2 ball = 2;
 }
