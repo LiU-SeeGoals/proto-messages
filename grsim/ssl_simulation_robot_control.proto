@@ -1,5 +1,5 @@
 syntax = "proto2";
-option go_package = "/grsim";
+option go_package = "/proto";
 
 // Full command for a single robot
 message RobotCommand {

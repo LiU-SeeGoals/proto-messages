@@ -1,5 +1,5 @@
 syntax = "proto2";
-option go_package = "/grsim";
+option go_package = "/proto";
 
 // Errors in the simulator
 message SimulatorError {

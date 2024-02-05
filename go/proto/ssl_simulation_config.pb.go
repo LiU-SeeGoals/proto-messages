@@ -4,10 +4,9 @@
 // 	protoc        v3.19.6
 // source: ssl_simulation_config.proto
 
-package grsim
+package proto
 
 import (
-	ssl_vision "/ssl_vision"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	anypb "google.golang.org/protobuf/types/known/anypb"
@@ -388,7 +387,7 @@ type SimulatorConfig struct {
 	unknownFields protoimpl.UnknownFields
 
 	// Update the geometry
-	Geometry *ssl_vision.SSL_GeometryData `protobuf:"bytes,1,opt,name=geometry" json:"geometry,omitempty"`
+	Geometry *SSL_GeometryData `protobuf:"bytes,1,opt,name=geometry" json:"geometry,omitempty"`
 	// Update the robot specs
 	RobotSpecs []*RobotSpecs `protobuf:"bytes,2,rep,name=robot_specs,json=robotSpecs" json:"robot_specs,omitempty"`
 	// Update realism configuration
@@ -429,7 +428,7 @@ func (*SimulatorConfig) Descriptor() ([]byte, []int) {
 	return file_ssl_simulation_config_proto_rawDescGZIP(), []int{4}
 }
 
-func (x *SimulatorConfig) GetGeometry() *ssl_vision.SSL_GeometryData {
+func (x *SimulatorConfig) GetGeometry() *SSL_GeometryData {
 	if x != nil {
 		return x.Geometry
 	}
@@ -537,7 +536,7 @@ var file_ssl_simulation_config_proto_rawDesc = []byte{
 	0x72, 0x65, 0x61, 0x6c, 0x69, 0x73, 0x6d, 0x43, 0x6f, 0x6e, 0x66, 0x69, 0x67, 0x12, 0x1f, 0x0a,
 	0x0b, 0x76, 0x69, 0x73, 0x69, 0x6f, 0x6e, 0x5f, 0x70, 0x6f, 0x72, 0x74, 0x18, 0x04, 0x20, 0x01,
 	0x28, 0x0d, 0x52, 0x0a, 0x76, 0x69, 0x73, 0x69, 0x6f, 0x6e, 0x50, 0x6f, 0x72, 0x74, 0x42, 0x08,
-	0x5a, 0x06, 0x2f, 0x67, 0x72, 0x73, 0x69, 0x6d,
+	0x5a, 0x06, 0x2f, 0x70, 0x72, 0x6f, 0x74, 0x6f,
 }
 
 var (
@@ -554,14 +553,14 @@ func file_ssl_simulation_config_proto_rawDescGZIP() []byte {
 
 var file_ssl_simulation_config_proto_msgTypes = make([]protoimpl.MessageInfo, 5)
 var file_ssl_simulation_config_proto_goTypes = []interface{}{
-	(*RobotLimits)(nil),                 // 0: RobotLimits
-	(*RobotWheelAngles)(nil),            // 1: RobotWheelAngles
-	(*RobotSpecs)(nil),                  // 2: RobotSpecs
-	(*RealismConfig)(nil),               // 3: RealismConfig
-	(*SimulatorConfig)(nil),             // 4: SimulatorConfig
-	(*RobotId)(nil),                     // 5: RobotId
-	(*anypb.Any)(nil),                   // 6: google.protobuf.Any
-	(*ssl_vision.SSL_GeometryData)(nil), // 7: SSL_GeometryData
+	(*RobotLimits)(nil),      // 0: RobotLimits
+	(*RobotWheelAngles)(nil), // 1: RobotWheelAngles
+	(*RobotSpecs)(nil),       // 2: RobotSpecs
+	(*RealismConfig)(nil),    // 3: RealismConfig
+	(*SimulatorConfig)(nil),  // 4: SimulatorConfig
+	(*RobotId)(nil),          // 5: RobotId
+	(*anypb.Any)(nil),        // 6: google.protobuf.Any
+	(*SSL_GeometryData)(nil), // 7: SSL_GeometryData
 }
 var file_ssl_simulation_config_proto_depIdxs = []int32{
 	5, // 0: RobotSpecs.id:type_name -> RobotId
@@ -585,6 +584,7 @@ func file_ssl_simulation_config_proto_init() {
 		return
 	}
 	file_ssl_gc_common_proto_init()
+	file_ssl_vision_geometry_proto_init()
 	if !protoimpl.UnsafeEnabled {
 		file_ssl_simulation_config_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*RobotLimits); i {

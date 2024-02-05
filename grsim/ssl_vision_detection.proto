@@ -1,5 +1,5 @@
 syntax = "proto2";
-option go_package = "/grsim";
+option go_package = "/proto";
 
 message SSL_DetectionBall {
   required float  confidence = 1;
