@@ -1,8 +1,8 @@
 syntax = "proto2";
 
-option go_package = "/proto";
+option go_package = "github.com/LiU-SeeGoals/proto-messages/go/ssl_vision";
 
-import "ssl_detection_tracked.proto";
+import "ssl_vision/ssl_detection_tracked.proto";
 
 // A wrapper packet containing meta data of the source
 // Also serves for the possibility to extend the protocol later

@@ -1,15 +1,14 @@
 syntax = "proto3";
 
-package action;
-option go_package = "/proto";
+option go_package = "github.com/LiU-SeeGoals/proto-messages/go/robot_action";
 
 // Enum for different types of actions
 enum ActionType {
-  STOP_ACTION = 0;
-  KICK_ACTION = 1;
-  MOVE_ACTION = 2;
+  KICK_ACTION = 0;
+  STOP_ACTION = 1;
+  MOVE_TO_ACTION = 2;
   INIT_ACTION = 3;
-  SET_NAVIGATION_DIRECTION_ACTION = 4;
+  MOVE_ACTION = 4;
   ROTATE_ACTION = 5;
 }
 

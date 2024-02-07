@@ -1,3 +1,5 @@
+github.com/LiU-SeeGoals/proto-messages v0.1.2 h1:IMOzhzZuQH4aDZDVGhkGiW//GJMQmSuxIi24iwAm6UI=
+github.com/LiU-SeeGoals/proto-messages v0.1.2/go.mod h1:xiDya6yIj+zx+6yOR9vIk77aKX0Z3qmwUUW+h2jiP70=
 github.com/google/go-cmp v0.5.5 h1:Khx7svrCpmxxtHBq5j2mp/xVjsi8hQMfNLvJFAlrGgU=
 github.com/google/go-cmp v0.5.5/go.mod h1:v8dTdLbMG2kIc/vJvl+f65V22dbkXbowE6jgT/gNBxE=
 golang.org/x/xerrors v0.0.0-20191204190536-9bdfabe68543 h1:E7g+9GITq07hpfrRu66IVDexMakfv52eLZ2CXBWiKr4=

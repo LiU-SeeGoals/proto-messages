@@ -1,6 +1,6 @@
 syntax = "proto2";
 
-option go_package = "/proto";
+option go_package = "github.com/LiU-SeeGoals/proto-messages/go/ssl_vision";
 
 // Default network address: 224.5.23.2:10010
 
