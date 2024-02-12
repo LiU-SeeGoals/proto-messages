@@ -7,7 +7,7 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" &>/dev/null && pwd)"
 generate_go_code() {
 	local dir_name="$1"
 	local dir_path="${SCRIPT_DIR}/${dir_name}" # Corrected to include subdirectory
-	local output_dir="${SCRIPT_DIR}/go"        # Output in subdirectories
+	local output_dir="${SCRIPT_DIR}/proto_go"  # Output in subdirectories
 
 	# Ensure the output directory exists
 	mkdir -p "${output_dir}"
@@ -28,4 +28,4 @@ generate_go_code "parsed_vision"
 generate_go_code "ssl_vision"
 generate_go_code "grsim"
 
-echo "Proto files built in ${SCRIPT_DIR}/go"
+echo "Proto files built in ${SCRIPT_DIR}/proto_go"

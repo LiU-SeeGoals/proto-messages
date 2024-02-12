@@ -1,10 +1,8 @@
 syntax = "proto3";
 
-option go_package = "github.com/LiU-SeeGoals/proto-messages/go/parsed_vision";
-message Vector2 {
-  float x = 1;
-  float y = 2;
-}
+import "ssl_vision/ssl_detection_tracked.proto";
+
+option go_package = "github.com/LiU-SeeGoals/proto_go/parsed_vision";
 
 message Robot {
   uint32 robot_id = 1;

@@ -1,5 +1,5 @@
 syntax = "proto2";
-option go_package = "github.com/LiU-SeeGoals/proto-messages/go/simulation";
+option go_package = "github.com/LiU-SeeGoals/proto_go/simulation";
 
 import "simulation/ssl_gc_common.proto";
 import "ssl_vision/ssl_vision_geometry.proto";

@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option go_package = "github.com/LiU-SeeGoals/proto-messages/go/robot_action";
+option go_package = "github.com/LiU-SeeGoals/proto_go/robot_action";
 
 // Enum for different types of actions
 enum ActionType {

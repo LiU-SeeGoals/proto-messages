@@ -1,5 +1,5 @@
 syntax = "proto2";
-option go_package = "github.com/LiU-SeeGoals/proto-messages/go/ssl_vision";
+option go_package = "github.com/LiU-SeeGoals/proto_go/ssl_vision";
 
 // A 2D float vector.
 message Vector2f {

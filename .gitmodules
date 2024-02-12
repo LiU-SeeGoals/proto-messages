@@ -1,0 +1,3 @@
+[submodule "proto_go"]
+	path = proto_go
+	url = git@github.com:LiU-SeeGoals/proto_go.git
