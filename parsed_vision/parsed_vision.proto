@@ -1,19 +1,22 @@
 syntax = "proto3";
 
-import "ssl_vision/ssl_detection_tracked.proto";
+import "robot_action/robot_action.proto";
 
 option go_package = "github.com/LiU-SeeGoals/proto_go/parsed_vision";
 
 message Robot {
   uint32 robot_id = 1;
 
-  Vector2 pos = 2;
-  float orientation = 3;
-  Vector2 vel = 4;
+  Vector3D pos = 2;
+  Vector3D vel = 3;
+}
+
+message Ball {
+  Vector2D pos = 1;
+  Vector2D vel = 2;
 }
 
 message ParsedFrame {
-
   repeated Robot robots = 1;
-  Vector2 ball = 2;
+  Ball ball = 2;
 }
