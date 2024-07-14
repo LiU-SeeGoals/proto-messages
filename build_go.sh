@@ -21,6 +21,9 @@ generate_go_code() {
 	fi
 }
 
+# Make sure we've the newest version of proto_go repository before creating new ones.
+git submodule update --remote --merge
+
 # Generate Go code for proto files in the grsim, robot_action, and ssl_vision directories
 generate_go_code "simulation"
 generate_go_code "robot_action"

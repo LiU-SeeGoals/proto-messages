@@ -14,6 +14,8 @@ To build the Go code, run the following script from the root of this directory:
 ./build_go.sh
 ```
 
+**OBS**: The go files is inside of a submodule in this repository. If you want to push them to that, you'll have to go into the submodule, switch to main and then push it.
+
 ### For C
 To build the C code, run the following script from the root of this directory:
 
