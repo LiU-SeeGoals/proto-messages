@@ -10,6 +10,7 @@ enum ActionType {
   INIT_ACTION = 3;
   MOVE_ACTION = 4;
   ROTATE_ACTION = 5;
+  PING = 6;
 }
 
 message Command {
