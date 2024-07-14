@@ -38,7 +38,7 @@ message RobotWheelAngles {
 // Specs of a robot
 message RobotSpecs {
   // Id of the robot
-  required RobotId id = 1;
+  required SimRobotId id = 1;
   // Robot radius [m]
   optional float radius = 2 [ default = 0.09 ];
   // Robot height [m]

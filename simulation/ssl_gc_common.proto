@@ -11,8 +11,8 @@ enum Team {
   BLUE = 2;
 }
 
-// RobotId is the combination of a team and a robot id
-message RobotId {
+// SimRobotId is the combination of a team and a robot id
+message SimRobotId {
   // the robot number
   optional uint32 id = 1;
   // the team that the robot belongs to

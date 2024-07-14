@@ -30,7 +30,7 @@ message TeleportBall {
 // Teleport a robot to some location and give it a velocity
 message TeleportRobot {
   // Robot id to teleport
-  required RobotId id = 1;
+  required SimRobotId id = 1;
   // x-coordinate [m]
   optional float x = 2;
   // y-coordinate [m]
