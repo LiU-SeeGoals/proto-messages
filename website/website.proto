@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+option go_package = "github.com/LiU-SeeGoals/proto_go/website";
+
+import "robot_action/robot_action.proto";
+import "simulation/ssl_simulation_control.proto";
+import "ssl_vision/ssl_wrapper.proto";
+
+message WebsiteCommand {
+  optional SSL_WrapperPacket control = 1;
+  optional SimulatorCommand config = 2;
+  repeated Command ActionCommands = 3;
+}   
