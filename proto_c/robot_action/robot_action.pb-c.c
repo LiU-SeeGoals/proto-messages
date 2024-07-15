@@ -373,7 +373,7 @@ const ProtobufCMessageDescriptor vector2_d__descriptor =
   (ProtobufCMessageInit) vector2_d__init,
   NULL,NULL,NULL    /* reserved[123] */
 };
-static const ProtobufCEnumValue action_type__enum_values_by_number[6] =
+static const ProtobufCEnumValue action_type__enum_values_by_number[7] =
 {
   { "KICK_ACTION", "ACTION_TYPE__KICK_ACTION", 0 },
   { "STOP_ACTION", "ACTION_TYPE__STOP_ACTION", 1 },
@@ -381,16 +381,18 @@ static const ProtobufCEnumValue action_type__enum_values_by_number[6] =
   { "INIT_ACTION", "ACTION_TYPE__INIT_ACTION", 3 },
   { "MOVE_ACTION", "ACTION_TYPE__MOVE_ACTION", 4 },
   { "ROTATE_ACTION", "ACTION_TYPE__ROTATE_ACTION", 5 },
+  { "PING", "ACTION_TYPE__PING", 6 },
 };
 static const ProtobufCIntRange action_type__value_ranges[] = {
-{0, 0},{0, 6}
+{0, 0},{0, 7}
 };
-static const ProtobufCEnumValueIndex action_type__enum_values_by_name[6] =
+static const ProtobufCEnumValueIndex action_type__enum_values_by_name[7] =
 {
   { "INIT_ACTION", 3 },
   { "KICK_ACTION", 0 },
   { "MOVE_ACTION", 4 },
   { "MOVE_TO_ACTION", 2 },
+  { "PING", 6 },
   { "ROTATE_ACTION", 5 },
   { "STOP_ACTION", 1 },
 };
@@ -401,9 +403,9 @@ const ProtobufCEnumDescriptor action_type__descriptor =
   "ActionType",
   "ActionType",
   "",
-  6,
+  7,
   action_type__enum_values_by_number,
-  6,
+  7,
   action_type__enum_values_by_name,
   1,
   action_type__value_ranges,
