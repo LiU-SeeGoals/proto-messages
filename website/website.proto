@@ -10,4 +10,5 @@ message WebsiteCommand {
   optional SSL_WrapperPacket control = 1;
   optional SimulatorCommand config = 2;
   repeated Command ActionCommands = 3;
-}   
+  repeated string log_messages = 4; 
+}
