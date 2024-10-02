@@ -1,7 +1,7 @@
 syntax = "proto2";
 option go_package = "github.com/LiU-SeeGoals/proto_go/simulation";
 
-import "simulation/ssl_gc_common.proto";
+import "gc/ssl_gc_common.proto";
 import "simulation/ssl_simulation_config.proto";
 import "simulation/ssl_simulation_error.proto";
 
@@ -30,7 +30,7 @@ message TeleportBall {
 // Teleport a robot to some location and give it a velocity
 message TeleportRobot {
   // Robot id to teleport
-  required SimRobotId id = 1;
+  required RobotId id = 1;
   // x-coordinate [m]
   optional float x = 2;
   // y-coordinate [m]
